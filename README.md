@@ -172,7 +172,7 @@ python环境的安装：在python官网下载版本为3.11.9的Python，并安�
 训练出来的模型默认的后缀名为.keras，如果你想在Arduino上运行它，你首先需要将其转换为.tflite格式。你可以使用`python src/tools/k2tflite.py`来完成这一转换过程,同时我还提供了一个将其转换成C数组的脚本`python src/tools/tflite2c.py`,这样你就可以在你的Arduino项目中直接使用它了。
 
 ### 6. 部署模型到ESP32（待实现）
-(请输入文本)
+暂无介绍
 
 
 
@@ -182,27 +182,27 @@ python环境的安装：在python官网下载版本为3.11.9的Python，并安�
 本项目提供了全面的性能评估体系，用于量化AI代理的表现。各项指标的含义和作用如下：
 
 ### 游戏性能指标
-- **最低分数阈值** (`MIN_SCORE_THRESHOLD`): 评估AI在测试中能否达到基本的游戏目标
-- **最小蛇长度阈值** (`MIN_LENGTH_THRESHOLD`): 衡量AI的生存能力和成长效率
-- **平均奖励阈值** (`MIN_AVG_REWARD`): 反映AI在游戏中的整体收益能力
-- **蛇生长速率阈值** (`SNAKE_GROWTH_RATE_THRESHOLD`): 评估AI的觅食效率
+- **最低分数阈值** (MIN_SCORE_THRESHOLD): 评估AI在测试中能否达到基本的游戏目标
+- **最小蛇长度阈值** (MIN_LENGTH_THRESHOLD): 衡量AI的生存能力和成长效率
+- **平均奖励阈值** (MIN_AVG_REWARD): 反映AI在游戏中的整体收益能力
+- **蛇生长速率阈值** (SNAKE_GROWTH_RATE_THRESHOLD): 评估AI的觅食效率
 
 ### 训练稳定性指标
-- **收敛阈值** (`CONVERGENCE_THRESHOLD`): 判断训练是否趋于稳定
-- **探索效率阈值** (`EXPLORATION_EFFICIENCY_THRESHOLD`): 衡量探索策略的有效性
-- **决策质量阈值** (`DECISION_QUALITY_THRESHOLD`): 评估AI决策的合理性
-- **稳定性评估窗口** (`STABILITY_WINDOW`): 用于平滑评估指标的波动
+- **收敛阈值** (CONVERGENCE_THRESHOLD): 判断训练是否趋于稳定
+- **探索效率阈值** (EXPLORATION_EFFICIENCY_THRESHOLD): 衡量探索策略的有效性
+- **决策质量阈值** (DECISION_QUALITY_THRESHOLD): 评估AI决策的合理性
+- **稳定性评估窗口** (STABILITY_WINDOW): 用于平滑评估指标的波动
 
 ### 时间与资源指标
-- **每轮最大时间** (`MAX_TIME_PER_EPISODE`): 控制单次游戏的执行时间
-- **最小Q值差异** (`MIN_Q_VALUE_DIFFERENCE`): 确保AI在不同动作间有足够的区分度
-- **性能评估窗口** (`PERFORMANCE_WINDOW`): 用于计算滚动平均性能
+- **每轮最大时间** (MAX_TIME_PER_EPISODE): 控制单次游戏的执行时间
+- **最小Q值差异** (MIN_Q_VALUE_DIFFERENCE): 确保AI在不同动作间有足够的区分度
+- **性能评估窗口** (PERFORMANCE_WINDOW): 用于计算滚动平均性能
 
 ### 测试可靠性指标
-- **结果保存目录** (`RESULT_DIR`): 统一管理所有测试结果
-- **截图质量** (`SCREENSHOT_QUALITY`): 保证游戏画面截图的清晰度
-- **GIF质量** (`GIF_QUALITY`): 保证游戏过程视频的流畅度
-- **最小平均奖励** (`MIN_AVG_REWARD`): 确保AI在测试中能获得合理奖励
+- **结果保存目录** (RESULT_DIR): 统一管理所有测试结果
+- **截图质量** (SCREENSHOT_QUALITY): 保证游戏画面截图的清晰度
+- **GIF质量** (GIF_QUALITY): 保证游戏过程视频的流畅度
+- **最小平均奖励** (MIN_AVG_REWARD): 确保AI在测试中能获得合理奖励
 
 ## 参数配置
 
