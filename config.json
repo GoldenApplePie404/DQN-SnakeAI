@@ -1,0 +1,58 @@
+{
+    "game": {
+        "GRID_WIDTH": 16,
+        "GRID_HEIGHT": 8,
+        "STATE_SIZE": 12,
+        "ACTION_SIZE": 4
+    },
+    "training": {
+        "EPISODES": 10000,
+        "BATCH_SIZE": 64,
+        "GAMMA": 0.9,
+        "LEARNING_RATE": 0.0005,
+        "EPSILON_INIT": 1.0,
+        "EPSILON_MIN": 0.05,
+        "EPSILON_DECAY": 0.995,
+        "REPLAY_BUFFER_SIZE": 20000,
+        "TARGET_UPDATE_FREQ": 300
+    },
+    "model": {
+        "SAVE_INTERVAL": 500,
+        "MODEL_DIR": "saved_models",
+        "LOG_DIR": "logs",
+        "CHECKPOINT_PREFIX": "snake_agent_",
+        "MODEL_EXTENSION": ".keras",
+        "TENSORBOARD_LOG_DIR": "logs/tensorboard"
+    },
+    "test": {
+        "GRID_SIZE": 40,
+        "TEST_EPISODES": 10,
+        "MAX_STEPS": 1000,
+        "FPS": 10,
+        "EXPLORATION_RATE": 0.1,
+        "MIN_SCORE_THRESHOLD": 5,
+        "MIN_LENGTH_THRESHOLD": 5,
+        "PERFORMANCE_WINDOW": 5,
+        "MIN_AVG_REWARD": 0.5,
+        "MAX_TIME_PER_EPISODE": 60,
+        "SNAKE_GROWTH_RATE_THRESHOLD": 0.3,
+        "CONVERGENCE_THRESHOLD": 0.1,
+        "EXPLORATION_EFFICIENCY_THRESHOLD": 0.7,
+        "DECISION_QUALITY_THRESHOLD": 0.8,
+        "STABILITY_WINDOW": 3,
+        "MIN_Q_VALUE_DIFFERENCE": 0.5,
+        "MODEL_DIR": "saved_models",
+        "MODEL_EXTENSION": ".keras",
+        "RESULT_DIR": "test_results",
+        "RESULT_IMG_DIR": "test_results/images",
+        "RESULT_DATA_DIR": "test_results/data",
+        "SAVE_GAMEPLAY_SCREEN": true,
+        "SCREENSHOT_DIR": "game_img",
+        "SCREENSHOT_QUALITY": 95,
+        "SAVE_GAMEPLAY_GIF": true,
+        "GIF_FPS": 10,
+        "GIF_LOOP": 0,
+        "GIF_QUALITY": 85,
+        "GIF_SUBSAMPLE": 1
+    }
+}
